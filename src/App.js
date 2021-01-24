@@ -1,16 +1,18 @@
-import React from 'react'
-import Row from './Row';
-import request from './request'
-import Banner from './Banner'
-import './App.css'
+import React from "react";
+import Row from "./Row";
+import request from "./request";
+import Banner from "./Banner";
+import Nav from "./Nav";
+import "./App.css";
 
 const App = () => {
   //TODO NAV
 
   //TODO BANNER
-  
+
   return (
     <div className="app">
+      <Nav />
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"
@@ -26,6 +28,6 @@ const App = () => {
       <Row title="Documemaries" fetchUrl={request.fetchDocumentariesMovies} />
     </div>
   );
-}
+};
 
-export default App
+export default App;
