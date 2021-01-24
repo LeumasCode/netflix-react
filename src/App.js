@@ -1,12 +1,22 @@
 import React from 'react'
 import Row from './Row';
 import request from './request'
+import Banner from './Banner'
 import './App.css'
 
 const App = () => {
+  //TODO NAV
+
+  //TODO BANNER
+  
   return (
-    <div className="App">
-      <Row title="NETFLIX ORIGINALS" fetchUrl={request.fetchNetflixOriginals} isLargeRow />
+    <div className="app">
+      <Banner />
+      <Row
+        title="NETFLIX ORIGINALS"
+        fetchUrl={request.fetchNetflixOriginals}
+        isLargeRow
+      />
       <Row title="Trending Now" fetchUrl={request.fetchTrending} />
       <Row title="Top Rated" fetchUrl={request.fetchTrending} />
       <Row title="Action Movies" fetchUrl={request.fetchActionMovies} />

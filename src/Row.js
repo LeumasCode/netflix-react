@@ -16,7 +16,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
 
     fetchData();
   }, [fetchUrl]);
-  console.log(movies);
+ 
 
   const renderedMovies = movies.map((movie) => {
     return (
